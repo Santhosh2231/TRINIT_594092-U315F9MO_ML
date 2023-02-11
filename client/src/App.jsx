@@ -9,8 +9,11 @@ import CropPrice from './screens/CropPrice';
 // import CropDisease from './screens/CropDisease';
 import SoilCrop from './screens/SoilCrop';
 // import Solutions from './screens/Solutions';
+import Prediction from "./screens/Prediction";
 import Footer from './screens/Footer';
 import SoilFertility from './screens/SoilFertility';
+import CropAnalysis from './screens/CropAnalysis';
+import CropLocation from './screens/CropLocation';
 
 function App() {
 
@@ -20,8 +23,10 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element="#about" />
-      {/* <Route path="/" element={<Solutions />} /> */}
+      <Route path="/prediction" element={<Prediction />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/cropanalysis" element={<CropAnalysis />} />
+      <Route path="/locationcropprediction" element={<CropLocation />} />
       <Route path="/soilanalysis" element={<SoilFertility />} />
       <Route path="/soilcropprediction" element={<SoilCrop />} />
       <Route path="/priceforecast" element={<Crops />} />

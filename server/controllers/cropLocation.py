@@ -81,6 +81,37 @@ class cropLocation(Resource):
         
         return {'context':context},200
 
+
+class CropAnalysis(Resource):
+    def get(self):
+        path = Path.cwd()
+        path_1 = str(path)+"\\..\\Dataset\\"+"Commodity_prices"
+        df_commodity = pd.read_csv(filepath_or_buffer=path_1)
+        states = df_commodity["state"].unique()
+        stateCrops = {}
+        for i in states:
+            crops = df_commodity[df_commodity["state"]==i]["commodity"].unique()
+            stateCrops[i]=crops.tolist()
+
+        #content = json.loads(stateCrops)
+
+        return {"content":stateCrops}
+
+class GetLocations(Resource):
+    def get(self):
+        path = Path.cwd()
+        path_3 = str(path)+"\\..\\Dataset\\"+"district wise rainfall normal.csv"
+        df_rainfall = pd.read_csv(path_3)
+        k = df_rainfall["STATE_UT_NAME"].unique()
+        k.sort()
+        state_district = {}
+        for i in k:
+            district = df_rainfall[df_rainfall["STATE_UT_NAME"]==i]["DISTRICT"].unique()
+            district.sort()
+            state_district[i] = district.tolist()
+
+        return {"content":state_district}
+
         
                                 
 

@@ -1,8 +1,6 @@
 import React from 'react'
-import Gain from "../assets/icons/gain-icon.png";
-import Loss from "../assets/icons/loss-icon.png";
 
-const data = [  { id: 1, name: 'John', age: 30 },  { id: 2, name: 'Jane', age: 25 },  { id: 3, name: 'Bob', age: 35 },]
+
 
 function SoilAnalysis(props) {
     // console.log(props.data.length);
