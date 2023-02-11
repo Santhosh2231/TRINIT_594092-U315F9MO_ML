@@ -1,33 +1,35 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
+import Navbar from './components/Navbar';
+import Crops from './screens/Crops';
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import Home from "./screens/Home";
+import Contact from "./screens/Contact";
+import CropPrice from './screens/CropPrice';
+// import CropDisease from './screens/CropDisease';
+import SoilCrop from './screens/SoilCrop';
+// import Solutions from './screens/Solutions';
+import Footer from './screens/Footer';
+import SoilFertility from './screens/SoilFertility';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
+   <BrowserRouter>
+   <Navbar />
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/about" element="#about" />
+      {/* <Route path="/" element={<Solutions />} /> */}
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/soilanalysis" element={<SoilFertility />} />
+      <Route path="/soilcropprediction" element={<SoilCrop />} />
+      <Route path="/priceforecast" element={<Crops />} />
+      {/* <Route path="/cropdisease" element={<CropDisease />} /> */}
+      <Route path="/priceforecast/:crop" element={<CropPrice />} />
+    </Routes>
+    <Footer />
+   </BrowserRouter>
   )
 }
 
