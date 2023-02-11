@@ -47,8 +47,7 @@ class soilcrop(Resource):
         data = pd.DataFrame(test_data)
 
         path = Path.cwd()
-        path_2 = str(path)+"\
-            +\..\\Dataset\\"+"soil_crop.pkl"
+        path_2 = str(path)+"\\controllers\\soil_crop.pkl"
         print(path_2)
         SVC_from_joblib = joblib.load(path_2)
         y_pred = SVC_from_joblib.predict(data)
@@ -64,7 +63,8 @@ class soilcrop(Resource):
         list1 = np.unique(pred).tolist();
         # print(y_pred)
         # print(list1)
-        list1.remove(y_pred)
+        if y_pred in list1:
+            list1.remove(y_pred)
         res = {
             "main":[y_pred[0]],
             "alternative":list1

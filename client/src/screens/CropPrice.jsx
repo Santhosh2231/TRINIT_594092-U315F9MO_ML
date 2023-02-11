@@ -2,6 +2,7 @@ import React, { useEffect, useReducer } from 'react'
 import { useNavigate, useParams } from 'react-router-dom';
 import axios from "axios";
 import ForecastPlot from '../components/ForecastPlot';
+import LoadingBox from '../components/LoadingBox';
 
 
 const dataReducer = (state, action) => {
@@ -53,7 +54,7 @@ const CropPrice = () => {
          <h6 className='text-center'>Previous 12 Months Price Trend for {crop}</h6>
            
             </div>
-            ):"Loading..."
+            ):<LoadingBox />
     }
     </div>
   )

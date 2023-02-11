@@ -5,6 +5,7 @@ import Top5 from '../components/Top5';
 import Bottom5 from '../components/Bottom5';
 import Sixmonths from '../components/Sixmonths';
 import { Link } from 'react-router-dom';
+import LoadingBox from '../components/LoadingBox';
 
 const DataContext = React.createContext()
 
@@ -59,7 +60,7 @@ const Crops = () => {
                         <div className="overflow-auto"><Sixmonths data={state.data.context.sixmonths}/></div>
                     </div>
                     </>
-                ):"Loading...."
+                ):<LoadingBox />
             }
             <p className='text-sm md:text-2xl my-20 align-middle justify-center'>Crop wise price Forecast </p>
             <div className="my-10 flex gap-5 justify-between flex-wrap group">
