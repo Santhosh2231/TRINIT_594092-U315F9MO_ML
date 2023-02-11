@@ -130,8 +130,8 @@ const content ={
         },        
     ],
     hero: {
-        firstName: "AgroTech ",
-        LastName: "Revolutionizing Farming with Artificial Intelligence",
+        firstName: "AgroVision ",
+        LastName: "Revolutionizing Farming with AI & ML",
         btnArray: ["A Programmer","AI & ML Enthusiast"],
         image: Home,
       },
@@ -139,11 +139,17 @@ const content ={
         content: "Myself I am Santhosh. A diligent pre-final Computer Science student at VIT Chennai with an immense passion for AI&ML and MERN. Currently I am SAMSUNG PRISM developer. A passionate programmer, highly motivated and quick learner. I am always curious about things and enjoy learning. I like to solve problems and fix errors. I am a detailed oriented person and I keep my goals and tasks organized."
       },
     aboutus:{
-        content: "Artificial intelligence (AI) in farming can potentially revolutionize the way we grow and manage crops. AgroTech an AI Application can be used to optimize various aspects of farming, such as predicting and mitigating crop diseases, optimizing irrigation, and predicting crop prices.",
+        content1: "AgroVision is an innovative project aimed at revolutionizing the way farmers choose crops and make decisions about their farming operations. With the use of cutting-edge technology and machine learning algorithms, AgroVision provides farmers with a comprehensive and accurate picture of their farm's potential. This includes soil analysis, location-based data, and rainfall information, which can be used to determine the most suitable crops for a given area.",
+
+        content2: "AgroVision not only provides recommendations on the best crops to plant but also provides farmers with an estimated crop price forecast. This helps farmers make informed decisions about their crop choices, ensuring that they can maximize their profits. Additionally, the crop analytics offered by AgroVision helps farmers track the progress of their crops over time and make adjustments as necessary.",
+        
+        content3: "The algorithms used by AgroVision are constantly learning and improving, taking into account real-time data and the latest research to provide farmers with the most up-to-date information. This helps to ensure that farmers have access to the most accurate information, reducing the risk of crop failure and increasing the chances of success.",
+        
+        content4: "AgroVision also offers a user-friendly interface that makes it easy for farmers to access and understand the information they need. Whether you are a seasoned farmer or just starting out, AgroVision has the tools and resources you need to make informed decisions about your crops and farming operations."
     },
     Contact: {
         title: "Contact Me",
-        subtitle: "Report Inaccuracy or Discuss Projects with me",
+        subtitle: "Report Inaccuracy or Discuss Projects with us",
         social_media: [
           {
             text: "santhosh.raminedi22@gmail.com",

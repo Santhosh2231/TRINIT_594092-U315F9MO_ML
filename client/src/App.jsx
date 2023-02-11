@@ -14,6 +14,7 @@ import Footer from './screens/Footer';
 import SoilFertility from './screens/SoilFertility';
 import CropAnalysis from './screens/CropAnalysis';
 import CropLocation from './screens/CropLocation';
+import About from './screens/About';
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
    <Navbar />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/about" element="#about" />
+      <Route path="/about" element=<About /> />
       <Route path="/prediction" element={<Prediction />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/cropanalysis" element={<CropAnalysis />} />

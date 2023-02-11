@@ -73,10 +73,11 @@ class cropLocation(Resource):
             min_modal_price = min(data[data["commodity"]==i]["modal_price"])
             max_modal_price = max(data[data["commodity"]==i]["modal_price"])
             avg_modal_price = data[data["commodity"]==i]["modal_price"].mean()
-            dict[i] = {"Max Val":max_val,"Min Val":min_val,"Min Modal Price":min_modal_price,"Max Modal Price":max_modal_price,"Avg modal price":avg_modal_price}
+            dict[i] = {"Max_Val":max_val,"Min_Val":min_val,"Min_Modal_Price":min_modal_price,"Max_Modal_Price":max_modal_price,"Avg_Modal_Price":avg_modal_price}
 
         df = pd.DataFrame.from_dict(dict).transpose() 
-        context = df.sort_values("Avg modal price", ascending=False).to_json()
+        context = df.sort_values("Avg_Modal_Price", ascending=False).transpose()
+        context = context.to_json()
         context = json.loads(context)
         
         return {'context':context},200

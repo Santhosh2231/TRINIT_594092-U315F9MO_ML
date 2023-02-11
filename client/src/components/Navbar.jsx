@@ -25,7 +25,7 @@ function Navbar() {
     <nav className="flex items-center justify-between flex-wrap bg-slate-700 p-4">
       
       <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight text-white space-x-10 md:pl-24 "><h6 className='text-white text-2xl'>AgroTech</h6></span>
+        <span className="font-semibold text-xl tracking-tight text-white space-x-10 md:pl-24 "><h6 className='text-white text-2xl'>AgroVision</h6></span>
       </div>
       <div className="block lg:hidden">
         <button className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white toggle-button">
@@ -37,7 +37,7 @@ function Navbar() {
           <Link to="/" className="block mt-4 lg:inline-block lg:mt-0  hover:text-white mr-4">
             <h6 className='text-teal-200 font-Merriweather md:text-lg'>Home</h6>
           </Link>
-          <Link to="/#about" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
+          <Link to="/about" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
             <h6 className='text-teal-200 font-Merriweather md:text-lg'>About</h6>
           </Link>
           <Link to="/prediction" className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4">
