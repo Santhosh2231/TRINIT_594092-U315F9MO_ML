@@ -184,13 +184,13 @@ const content ={
         subtitle: "Our Mission",
         solutions_content: [
             {
-                org:"Crop Recommendation based on locality and Seasons",
+                org:"Crop prediction based on locality and Seasons",
                 logo:Location, 
                 link:"/cropanalysis",
-                work: "Crop recommendation based on locality and seasons is a crucial aspect of modern farming. By utilizing local climate data and historical weather patterns, farmers can make informed decisions on which crops to grow, leading to higher yields and improved profitability."
+                work: "Crop prediction based on locality and seasons is a crucial aspect of modern farming. By utilizing local climate data and historical weather patterns, farmers can make informed decisions on which crops to grow, leading to higher yields and improved profitability."
               },
           {
-            org:"Crop Recommendation based on Soil fertility",
+            org:"Crop prediction based on Soil fertility",
             logo:SoilImg, 
             link:"/soilanalysis",
             work: "Agriculture forms a major occupation in countries like India. Hence, achieving good yield in the crops grown by farmers is the major concern. Various environmental factors have a significant impact on the crop yield. One such component that contributes majorly to the crop yield is soil."

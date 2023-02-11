@@ -45,8 +45,8 @@ const CropAnalysis = () => {
                 <h6 className='text-teal-200 md:text-xl'>Make Crop Prediction</h6>
             </Link>
             </div> */}
-            <button><Link to="/soilcropprediction" className="block mt-4 lg:inline-block border-2 p-5 mx-auto bg-slate-100 hover:border-blue-800 hover:bg-blue-100  border-teal-500  rounded lg:mt-0 text-green-900 hover:text-white">
-                <h6 className='text-teal-700 md:text-4xl'>Get a suitable crop of your Location  </h6>
+            <button><Link to="/locationcropprediction" className="block mt-4 lg:inline-block border-2 p-5 mx-auto bg-slate-100 hover:border-blue-800 hover:bg-blue-100  border-teal-500  rounded lg:mt-0 text-green-900 hover:text-white">
+                <h6 className='text-teal-700 md:text-4xl font-Merriweather'>Get a suitable crop of your Location  </h6>
             </Link></button>
            
             {

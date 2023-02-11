@@ -94,7 +94,7 @@ const CropLocation = () => {
                 <div className='md:w-1/2 w-full'>
                     <div className='flex justify-center items-center'><h4 className='font-Inria text-lg md:text-3xl mt-4 '>Select Type of Season</h4></div>
                     
-                    <div className=" flex flex-col justify-center items-center my-2">
+                    <div className=" flex flex-col mx-28 my-2">
                     <label className="inline-flex text-lg md:text-2xl items-center mr-6 mb-2">
                         <input type="radio" className="form-radio" name="type" value="Jan-Feb" onClick={(e)=>setType("Jan-Feb")} />
                         <span className="ml-2 font-Merriweather">January -February</span>

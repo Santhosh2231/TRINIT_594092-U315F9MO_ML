@@ -73,6 +73,7 @@ class cropLocation(Resource):
             min_modal_price = min(data[data["commodity"]==i]["modal_price"])
             max_modal_price = max(data[data["commodity"]==i]["modal_price"])
             avg_modal_price = data[data["commodity"]==i]["modal_price"].mean()
+            avg_modal_price = round(avg_modal_price);
             dict[i] = {"Max_Val":max_val,"Min_Val":min_val,"Min_Modal_Price":min_modal_price,"Max_Modal_Price":max_modal_price,"Avg_Modal_Price":avg_modal_price}
 
         df = pd.DataFrame.from_dict(dict).transpose() 
