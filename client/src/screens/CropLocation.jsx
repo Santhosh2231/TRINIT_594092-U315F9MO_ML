@@ -40,7 +40,7 @@ const CropLocation = () => {
     console.log(data);
     
       axios
-        .post("http://127.0.0.1:5000/api/croplocation", data)
+        .post("https://santhosh2211.pythonanywhere.com/api/croplocation", data)
         .then(response => {
           dispatch({ type: 'SET_DATA', payload: response.data })
           console.log(response.data);

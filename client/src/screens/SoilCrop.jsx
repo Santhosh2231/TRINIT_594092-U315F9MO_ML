@@ -25,6 +25,7 @@ const SoilCrop = () => {
   const [humidity,setHumidity] = useState(null);
   const [ph,setPH] = useState(null);
   const [rainfall,setRainfall] = useState(null);
+
   function submitHandler(e){
       e.preventDefault();
       const data = {
@@ -38,7 +39,7 @@ const SoilCrop = () => {
       } 
       
         axios
-          .post("http://127.0.0.1:5000/api/soilcrop", data)
+          .post("https://santhosh2211.pythonanywhere.com/api/soilcrop", data)
           .then(response => {
             dispatch({ type: 'SET_DATA', payload: response.data })
 

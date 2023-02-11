@@ -25,7 +25,7 @@ const CropAnalysis = () => {
     useEffect(() => {
         const getData = async () => {
           try {
-            const { data } = await axios.get('http://127.0.0.1:5000/api/cropanalysis');
+            const { data } = await axios.get('https://santhosh2211.pythonanywhere.com/api/cropanalysis');
             console.log(data.content)
             dispatch({ type: 'SET_DATA', payload: data })
           } catch (err) {
