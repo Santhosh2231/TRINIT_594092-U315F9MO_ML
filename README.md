@@ -7,7 +7,7 @@ AgroVision is an innovative project aimed at revolutionizing the way farmers cho
 2. Crop Prediction based on the soil fertility
 3. Crop Price Prediction.
 
-Project is live at : https://agrovision-trinit.netlify.app/
+### Project is live at : https://agrovision-trinit.netlify.app/
 
 ## API's of our project.
 
