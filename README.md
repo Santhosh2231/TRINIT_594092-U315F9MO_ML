@@ -28,10 +28,10 @@ You can find API's here:
 ## Interface of the project.
 
 ### Crop Prediction based on locality and seasons.
-![screencapture-agrovision-trinit-netlify-app-locationcropprediction-2023-02-12-07_47_21](https://user-images.githubusercontent.com/87355988/218289291-48d6ab5d-8cc1-4b8d-a776-67080278f690.png)
+![screencapture-agrovision-trinit-netlify-app-locationcropprediction-2023-02-12-16_40_50](https://user-images.githubusercontent.com/87355988/218314134-6ea4a02b-18bb-4481-a2a9-03e750106491.png)
 
 ### Crop prediction based on soil fertility
-![screencapture-agrovision-trinit-netlify-app-soilcropprediction-2023-02-12-07_47_39](https://user-images.githubusercontent.com/87355988/218289308-7cb7266a-78a2-4959-9307-e14a09e29124.png)
+![screencapture-agrovision-trinit-netlify-app-soilcropprediction-2023-02-12-16_41_36](https://user-images.githubusercontent.com/87355988/218314161-c4107868-6a5e-4b06-8ba6-5531c40c4b31.png)
 
 ### Crop Analytics.
 ![screencapture-agrovision-trinit-netlify-app-priceforecast-2023-02-12-07_47_57](https://user-images.githubusercontent.com/87355988/218289324-d13ae063-719f-46b0-98c5-fc154f025875.png)
